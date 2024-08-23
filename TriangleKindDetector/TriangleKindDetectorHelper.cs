@@ -19,7 +19,7 @@ public class TriangleKindDetectorHelper
 
         // https://www.quora.com/What-is-the-method-for-determining-if-a-triangle-is-acute-or-obtuse
         // C^2 = A^2 + B^2 - 2*A*B*cos(theta)
-        var cosTheta = (edgeA * edgeA + edgeB * edgeB - edgeC * edgeC) / (2 * edgeA * edgeB);
+        var cosTheta = edgeA * edgeA + edgeB * edgeB - edgeC * edgeC;
 
         if (cosTheta < -EPS) return TriangleKind.Obtuse;
         if (cosTheta >  EPS) return TriangleKind.Acute;
