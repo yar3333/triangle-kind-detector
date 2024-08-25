@@ -1,6 +1,6 @@
 ﻿namespace TriangleKindDetector;
 
-public class TriangleKindDetectorHelper
+public static class TriangleKindDetectorHelper
 {
     /// <summary>
     /// Related to cos of bigger angle.
